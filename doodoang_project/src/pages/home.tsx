@@ -4,6 +4,7 @@ import Random from "../component/Random"
 import Picbutton from "../component/button"
 import RandomButton from "../assets/RandomButton.png";
 import ClickedRandomButton from "../assets/ClickedRandomButton.png";
+import { motion } from "framer-motion";
 
 
 export default function Home(){
@@ -30,5 +31,5 @@ export default function Home(){
                 </div>
             </div>
         </div>
-    )
+    );
 }

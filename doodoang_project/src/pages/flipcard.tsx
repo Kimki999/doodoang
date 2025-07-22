@@ -31,6 +31,7 @@ import ClickedHomeButton from "../assets/ClickedHomeButton.png";
 import ForecastButton from "../assets/ForecastButton.png";
 import ClickedForecastButton from "../assets/ClickedForecastButton.png";
 import "../pages/css/flip.css"
+import { motion } from "framer-motion";
 
 
 const Allcard = [TheFool,TheMagician,TheHighPreistess,TheEmpress,TheEmperor,
@@ -48,20 +49,25 @@ export default function Flipcard(){
     return (
         <div className="flex items-center justify-center place-items-center min-h-screen ">
             <div className="bg-white flex items-center justify-center rounded-xl">
-                <div className="bg-lime-500 items-center justify-center m-2">
-                    <div className="bg-sky-500 perspective cursor-pointer w-49 h-80" onClick={() => setFlipped(flipped==false?(true):(true))}>
-                        <div className={`relative transition-transform duration-700 preserve3D ${flipped==false?("flip180"):("")}`}>
-                            {/* Back Card */}
-                            <div className="absolute rounded-xl backface-hidden flip180 m-2">
-                                <img className="max-h-1/2 items-center rounded-xl" src={Backcard} alt=""></img>
-                            </div>
+                <div className="items-center justify-center m-2">
+                    <div className="roboto-font-bold text-2xl flex items-center justify-center text-red-500 underline decoration-red-500">!!! Click on card !!!</div>
 
-                            {/* Front Card */}
-                            <div className="absolute rounded-xl backface-hidden  m-2">
-                                <img className="max-h-1/2 items-center rounded-xl" src={Allcard[number==null?(0):(number)]} alt=""></img>
+                    <div className="flex items-center justify-center">
+                        <div className="perspective cursor-pointer w-49 h-80" onClick={() => setFlipped(flipped==false?(true):(true))}>
+                            <div className={`relative transition-transform duration-700 preserve3D ${flipped==false?("flip180"):("")}`}>
+                                {/* Back Card */}
+                                <div className="absolute rounded-xl backface-hidden flip180 m-2">
+                                    <img className="max-h-3/4 items-center rounded-xl shadow-l object-cover" src={Backcard} alt=""></img>
+                                </div>
+
+                                {/* Front Card */}
+                                <div className="absolute rounded-xl backface-hidden m-2">
+                                    <img className="max-h-3/4 items-center rounded-xl shadow-l object-cover" src={Allcard[number==null?(0):(number)]} alt=""></img>
+                                </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
+                    
                     <div className="flex items-center justify-center mt-1 rounded-xl">
                         <Picbutton onClick={() => navigate("/",{ replace: true })} max_h={10} base={HomeButton} hover={ClickedHomeButton}></Picbutton>
                     </div>
@@ -71,6 +77,5 @@ export default function Flipcard(){
                 </div>
             </div>
         </div>
-
     );
 }
