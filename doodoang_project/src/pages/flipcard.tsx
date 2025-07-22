@@ -48,9 +48,19 @@ export default function Flipcard(){
     return (
         <div className="flex items-center justify-center place-items-center min-h-screen ">
             <div className="bg-white flex items-center justify-center rounded-xl">
-                <div className="bg-white items-center justify-center m-2">
-                    <div className="">
-                        <img className="h-[50dvh] items-center rounded-xl" src={Allcard[number==null?(0):(number)]} alt=""></img>
+                <div className="bg-lime-500 items-center justify-center m-2">
+                    <div className="bg-sky-500 perspective cursor-pointer w-49 h-80" onClick={() => setFlipped(flipped==false?(true):(true))}>
+                        <div className={`relative transition-transform duration-700 preserve3D ${flipped==false?("flip180"):("")}`}>
+                            {/* Back Card */}
+                            <div className="absolute rounded-xl backface-hidden flip180 m-2">
+                                <img className="max-h-1/2 items-center rounded-xl" src={Backcard} alt=""></img>
+                            </div>
+
+                            {/* Front Card */}
+                            <div className="absolute rounded-xl backface-hidden  m-2">
+                                <img className="max-h-1/2 items-center rounded-xl" src={Allcard[number==null?(0):(number)]} alt=""></img>
+                            </div>
+                        </div>
                     </div>
                     <div className="flex items-center justify-center mt-1 rounded-xl">
                         <Picbutton onClick={() => navigate("/",{ replace: true })} max_h={10} base={HomeButton} hover={ClickedHomeButton}></Picbutton>
@@ -61,32 +71,6 @@ export default function Flipcard(){
                 </div>
             </div>
         </div>
-        // <div className="bg-white">
-        //     <div className="">
-        //         <div className="bg-blue-200 h-[50dvh] max-w-1/3 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-auto perspective cursor-pointer" onClick={() => setFlipped(flipped == false?(true):(true))}>
-        //             <div className={`relative items-center justify-center w-full h-full transition-transform duration-700 transform preserve-3d ${flipped ? "rotate-y-180" : ""}`}>   
 
-        //                 {/* ด้านหลัง */}
-        //                 {/* <div className="absolute w-full h-full bg-green-500 text-white flex items-center justify-center text-xl rotate-y-180 backface-hidden rounded-lg shadow-lg"> */}
-        //                 <div className="absolute w-full h-full text-white flex items-center justify-center text-xl backface-hidden rounded-lg">
-        //                     <img className="h-[50dvh] items-center rounded-xl" src={Backcard} alt=""></img>
-        //                 </div>
-
-        //                 {/* ด้านหน้า */}
-        //                 {/* <div className="absolute w-full h-full bg-blue-500 text-white flex items-center justify-center text-xl backface-hidden rounded-lg shadow-lg"> */}
-        //                 <div className="absolute w-full h-full text-white flex items-center justify-center text-xl rotate-y-180 backface-hidden rounded-lg">
-        //                     <img className="h-[50dvh] items-center rounded-xl" src={Allcard[number==null?(0):(number)]} alt=""></img>
-        //                 </div>                    
-        //             </div>
-        //         </div>  
-        //     </div>
-            
-        //     <div className="bg-green-500 m-2 flex justify-center">
-        //         <Picbutton onClick={() => navigate("/",{ replace: true })} max_h={10} base={HomeButton} hover={ClickedHomeButton}></Picbutton>
-        //     </div>
-        //     <div className="bg-orange-500 m-2 flex justify-center">
-        //         <Picbutton onClick={() => navigate("/GetCard",{replace: true,state:[number,Allcard[number]]})} max_h={10} base={ForecastButton} hover={ClickedForecastButton} ></Picbutton>   
-        //     </div>
-        // </div>
     );
 }

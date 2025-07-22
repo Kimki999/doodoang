@@ -2,8 +2,13 @@
   perspective: 1000px;
 }
 
-.preserve-3d {
+.preserve3D {
+  transition: transform 0.7s;
   transform-style: preserve-3d;
+}
+
+.flip180 {
+  transform: rotateY(180deg);
 }
 
 .backface-hidden {
