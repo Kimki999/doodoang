@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Thai language */
+.noto-sans-thai-font {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+.noto-sans-thai-font-bold {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+/* Eng language */
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+.roboto-font-bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+body {
+  height: 100vh;
+  background: #000a45;
+  background: linear-gradient(-2deg, rgba(0, 10, 69, 1) 14%, rgba(62, 33, 143, 1) 41%, rgba(79, 108, 196, 1) 69%);
+}
