@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import type { Children } from "../component/Children";
+import type { Children } from "../type/Children";
 
 export default function fadeIn({children}:Children){
 

@@ -1,10 +1,8 @@
-import { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Random from "../component/Random"
 import Picbutton from "../component/button"
 import RandomButton from "../assets/RandomButton.png";
 import ClickedRandomButton from "../assets/ClickedRandomButton.png";
-import { motion } from "framer-motion";
 import FadeIn from "../component/fadeIn";
 
 export default function Home(){
@@ -21,7 +19,7 @@ export default function Home(){
         <FadeIn>
             <div className="flex items-center justify-center min-h-screen">
                 <div className="mx-auto max-w-3/4 overflow-hidden rounded-xl bg-white shadow-md text-black">
-                    <div className="flex items-center justify-center m-3 text-3xl roboto-font-bold">
+                    <div className="flex items-center justify-center m-3 text-lg roboto-font-bold 2xl:text-2xl xl:text-xl lg:text-lg">
                         DooDoang
                     </div>
                     <div className="m-2">

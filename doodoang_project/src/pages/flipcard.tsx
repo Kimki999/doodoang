@@ -23,7 +23,7 @@ import TheWorld from "../assets/The_World.png";
 import Backcard from "../assets/back_card.png";
 
 import { useLocation, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Picbutton from "../component/button";
 import HomeButton from "../assets/HomeButton.png";
@@ -31,7 +31,6 @@ import ClickedHomeButton from "../assets/ClickedHomeButton.png";
 import ForecastButton from "../assets/ForecastButton.png";
 import ClickedForecastButton from "../assets/ClickedForecastButton.png";
 import "../pages/css/flip.css"
-import { motion } from "framer-motion";
 import FadeIn from "../component/fadeIn";
 
 
@@ -55,8 +54,8 @@ export default function Flipcard(){
                 <div className="flex items-center justify-center place-items-center min-h-screen ">
                     <div className="bg-white flex items-center justify-center rounded-xl">
                         <div className="items-center justify-center m-2">
-                            <div className="roboto-font-bold text-2xl flex items-center justify-center 
-                            text-red-500 underline decoration-red-500">
+                            <div className="roboto-font-bold text-lg flex items-center justify-center 
+                            text-red-500 underline decoration-red-500 2xl:text-2xl xl:text-xl lg:text-lg">
                                 !!! Click on card !!!
                             </div>
 

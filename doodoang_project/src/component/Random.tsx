@@ -16,7 +16,7 @@ export default function Random(){
                     key={i}
                     src={src}
                     alt=""
-                    className="h-[40dvh] w-auto mx-4 inline-block"
+                    className="h-[40dvh] w-auto mx-4 inline-block "
                 />
                 ))}
             </div>

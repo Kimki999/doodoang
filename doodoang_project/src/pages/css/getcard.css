@@ -1,6 +1,199 @@
 
-
 .TemplateColor{
     background: #6907a6;
     background: linear-gradient(0deg,rgba(105, 7, 166, 1) 36%, rgba(161, 5, 196, 1) 76%);
+}
+
+.side-scroll{
+    max-height: 50px;
+}
+
+/* ขนาดหน้าจอ >= 320 */
+@media (min-width:320px){
+    .side-scroll{
+        max-height: 70px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 370 */
+@media (min-width:370px){
+    .side-scroll{
+        max-height: 80px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 420 */
+@media (min-width:420){
+    .side-scroll{
+        max-height: 85px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 450 */
+@media (min-width:450){
+    .side-scroll{
+        max-height: 90px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 470 */
+@media (min-width:470px){
+    .side-scroll{
+        max-height: 100px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 520 */
+@media (min-width:520px){
+    .side-scroll{
+        max-height: 120px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 570 */
+@media (min-width:570px){
+    .side-scroll{
+        max-height: 140px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 620 */
+@media (min-width:620px){
+    .side-scroll{
+        max-height: 160px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 670 */
+@media (min-width:670px){
+    .side-scroll{
+        max-height: 180px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 720 */
+@media (min-width:720px){
+    .side-scroll{
+        max-height: 200px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 770 */
+@media (min-width:770px){
+    .side-scroll{
+        max-height: 215px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 820 */
+@media (min-width:820px){
+    .side-scroll{
+        max-height: 240px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 870 */
+@media (min-width:870px){
+    .side-scroll{
+        max-height: 255px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 920 */
+@media (min-width:920px){
+    .side-scroll{
+        max-height: 265px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 970 */
+@media (min-width:970px){
+    .side-scroll{
+        max-height: 270px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 1020 */
+@media (min-width:1020px){
+    .side-scroll{
+        max-height: 280px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 1070 */
+@media (min-width:1070px){
+    .side-scroll{
+        max-height: 290px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 1120 */
+@media (min-width:1120px){
+    .side-scroll{
+        max-height: 300px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 1170 */
+@media (min-width:1170px){
+    .side-scroll{
+        max-height: 320px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 1220 */
+@media (min-width:1220px){
+    .side-scroll{
+        max-height: 350px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 1270 */
+@media (min-width:1270px){
+    .side-scroll{
+        max-height: 350px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 1320 */
+@media (min-width:1320px){
+    .side-scroll{
+        max-height: 355px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 1370 */
+@media (min-width:1370px){
+    .side-scroll{
+        max-height: 370px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 1420 */
+@media (min-width:1420px){
+    .side-scroll{
+        max-height: 380px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 1470 */
+@media (min-width:1470px){
+    .side-scroll{
+        max-height: 390px;
+    }
+}
+
+
+/* ขนาดหน้าจอ >= 1520 */
+@media (min-width:1520px){
+    .side-scroll{
+        max-height: 410px;
+    }
+}   
+
+/* ขนาดหน้าจอ >= 1570 */
+@media (min-width:1570px){
+    .side-scroll{
+        max-height: 430px;
+    }
 }
