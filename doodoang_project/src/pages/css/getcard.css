@@ -46,21 +46,35 @@
 /* ขนาดหน้าจอ >= 520 */
 @media (min-width:520px){
     .side-scroll{
-        max-height: 120px;
+        max-height: 100px;
     }
 }
 
 /* ขนาดหน้าจอ >= 570 */
 @media (min-width:570px){
     .side-scroll{
-        max-height: 140px;
+        max-height: 100px;
     }
 }
 
 /* ขนาดหน้าจอ >= 620 */
 @media (min-width:620px){
     .side-scroll{
-        max-height: 160px;
+        max-height: 100px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 639 */
+@media (min-width:639px){
+    .side-scroll{
+        max-height: 100px;
+    }
+}
+
+/* ขนาดหน้าจอ >= 639 */
+@media (min-width:640px){
+    .side-scroll{
+        max-height: 180px;
     }
 }
 
