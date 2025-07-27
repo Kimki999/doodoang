@@ -93,7 +93,7 @@ export default function Get_Card(){
 
                         <footer className="TemplateColor noto-sans-thai-font text-center text-white rounded-b-lg p-2 shadow-xl">
                             <div className="text-red-500 2xl:text-[14px] xl:text-[12px] lg:text-[10px] md:text-[8px] sm:text-[7px] text-[7px]">
-                                อย่าลืมมาแลกของที่ระลึกฟรีได้ที่บูธชั้น 3 ห้อง 308 น้าาา
+                                อย่าลืมมาแลกของที่ระลึกฟรีได้ที่บูธชั้น 3 ห้อง 308
                             </div>
                             <div className="noto-sans-thai-font-bold 2xl:text-[12px] xl:text-[10px] lg:text-[8px] md:text-[6px] sm:text-[5px] text-[5px]">
                                 made by CSCMU66 

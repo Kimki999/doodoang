@@ -82,7 +82,10 @@ export default function Flipcard(){
                                 <Picbutton onClick={() => navigate("/GetCard",{replace: true,state:[number,Allcard[number]]})} max_h={10} base={ForecastButton} hover={ClickedForecastButton} ></Picbutton>   
                             </div>
 
-                            <div className="flex items-center justify-center m-4 text-xs roboto-font-bold">
+                            <div className="noto-sans-thai-font-bold text-center m-2 text-red-500 text-xs">
+                                อย่าลืมมาแลกของที่ระลึกฟรีได้ที่บูธชั้น 3 ห้อง 308
+                            </div>
+                            <div className="flex items-center justify-center m-2 text-xs roboto-font-bold">
                                 made by CS66 CMU student
                             </div>
                         </div>
