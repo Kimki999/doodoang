@@ -16,7 +16,7 @@ export default function Random(){
                     key={i}
                     src={src}
                     alt=""
-                    className="h-[40dvh] w-auto mx-4 inline-block "
+                    className="h-[40dvh] w-auto mx-4 inline-block 2xl:rounded-xl xl:rounded-xl lg:rounded-xl md:rounded-xl rounded-sm"
                 />
                 ))}
             </div>

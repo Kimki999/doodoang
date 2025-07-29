@@ -1,25 +1,25 @@
-import TheFool from "../assets/The_Fool.png";
-import TheMagician from "../assets/The_Magician.png";
-import TheHighPreistess from "../assets/The_High_Priestess.png";
-import TheEmpress from "../assets/The_Empress.png";
-import TheEmperor from "../assets/The_Emperor.png";
-import TheHierophant from "../assets/The_Hierophant.png";
-import TheLovers from "../assets/The_Lovers.png";
-import TheChariot from "../assets/The_Chariot.png";
-import Strength from "../assets/Strength.png";
-import TheHermit from "../assets/The_Hermit.png";
-import WheelofFortune from "../assets/Wheel_of_Fortune.png";
-import Justice from "../assets/Justice.png";
-import TheHangedMan from "../assets/The_Hanged_Man.png";
-import Death from "../assets/Death.png";
-import Temperance from "../assets/Temperance.png";
-import TheDevil from "../assets/The_Devil.png";
-import TheTower from "../assets/The_Tower.png";
-import TheStar from "../assets/The_Star.png";
-import TheMoon from "../assets/The_Moon.png";
-import TheSun from "../assets/The_Sun.png";
-import Judgement from "../assets/Judgement.png";
-import TheWorld from "../assets/The_World.png";
+import TheFool from "../assets/00_the_fool.png";
+import TheMagician from "../assets/01_the_magician.png";
+import TheHighPreistess from "../assets/02_the_high_priestess.png";
+import TheEmpress from "../assets/03_the_empress.png";
+import TheEmperor from "../assets/04_the_emperor.jpg";
+import TheHierophant from "../assets/05_the_hirophant.jpg";
+import TheLovers from "../assets/06_the_lovers.jpg";
+import TheChariot from "../assets/07_the_chariot.jpg";
+import Strength from "../assets/08_strength.jpg";
+import TheHermit from "../assets/09_the_hermit.png";
+import WheelofFortune from "../assets/10_the_wheel.png";
+import Justice from "../assets/11_justice.png";
+import TheHangedMan from "../assets/12_hanged_man.png";
+import Death from "../assets/13_Death.png";
+import Temperance from "../assets/14_Temperance.png";
+import TheDevil from "../assets/15_The_Devil.png";
+import TheTower from "../assets/16_The_Tower.png";
+import TheStar from "../assets/17_The_Star.jpg";
+import TheMoon from "../assets/18_The_Moon.jpg";
+import TheSun from "../assets/19_The_Sun.jpg";
+import Judgement from "../assets/20_Judgement.jpg";
+import TheWorld from "../assets/21_The_World.jpg";
 import Backcard from "../assets/back_card.png";
 
 import { useLocation, useNavigate } from "react-router-dom";
@@ -64,12 +64,12 @@ export default function Flipcard(){
                                     <div className={`relative transition-transform duration-700 preserve3D ${flipped==false?("flip180"):("")}`}>
                                         {/* Back Card */}
                                         <div className="absolute rounded-xl backface-hidden flip180 m-2">
-                                            <img className="max-h-3/4 items-center rounded-xl shadow-l object-cover" src={Backcard} alt=""></img>
+                                            <img className="max-h-1/2 items-center rounded-xl shadow-l object-cover" src={Backcard} alt=""></img>
                                         </div>
 
                                         {/* Front Card */}
                                         <div className="absolute rounded-xl backface-hidden m-2">
-                                            <img className="max-h-3/4 items-center rounded-xl shadow-l object-cover" src={Allcard[number==null?(0):(number)]} alt=""></img>
+                                            <img className="max-h-1/2 items-center rounded-xl shadow-l object-cover" src={Allcard[number==null?(0):(number)]} alt=""></img>
                                         </div>
                                     </div>
                                 </div> 
