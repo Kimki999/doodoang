@@ -29,9 +29,6 @@ export default function Home(){
                         <Picbutton onClick={() => navigate("/FlipCard",{state:getRandom()})} max_h={10} base={RandomButton} hover={ClickedRandomButton}></Picbutton>
                     </div>
 
-                    <div className="noto-sans-thai-font-bold text-center m-2 text-red-500 text-xs">
-                        อย่าลืมมาแลกของที่ระลึกฟรีได้ที่บูธชั้น 3 ห้อง 308
-                    </div>
                     <div className="flex items-center justify-center m-2 text-xs roboto-font-bold">
                         made by CS66 CMU student
                     </div>

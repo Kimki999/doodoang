@@ -37,7 +37,7 @@ export default function Get_Card(){
                 <div className="bg-indigo-400 max-w-1/2 h-3/4 flex justify-center items-center rounded-xl sm:max-w-3/4 " >
                     <div className="m-2">
                         <header className="TemplateColor roboto-font-bold rounded-t-lg">
-                            <div className="text-center text-white p-2 shadow-xl 2xl:text-[18px] xl:text-[16px] lg:text-[14px] md:text-[12px] sm:text-[10px] text-[7px]">
+                            <div className="text-center text-white p-2 shadow-xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-md sm:text-sm text-sm">
                                 {arcana[number].name}
                             </div>
                         </header>
@@ -55,15 +55,25 @@ export default function Get_Card(){
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-span-2 row-span-3 noto-sans-thai-font m-3 overflow-y-auto h-full 
-                                side-scroll 2xl:text-[15px] xl:text-[13px] lg:text-[11px] md:text-[9px] sm:text-[7px] text-[5px]">
-                                    <div className="">
-                                        <p>{arcana[number].meanTH}</p><br/><br/>
-                                        <p><a className="noto-sans-thai-font-bold">ความหมายด้านดี:</a> {arcana[number].meanGoodTH}</p><br/>
-                                        <p><a className="noto-sans-thai-font-bold">ความหมายด้านลบ:</a> {arcana[number].meanBadTH}</p><br/><br/>
-                                        <p><a className="noto-sans-thai-font-bold">ข้อความจากแม่หมอ:</a> {arcana[number].hint}</p>
-                                    </div>
+                                <div className="col-span-2 row-span-3 bg-black-500 flex items-center">
+                                   <div className="noto-sans-thai-font m-3 overflow-y-auto h-full 
+                                    side-scroll 2xl:text-[15px] xl:text-[13px] lg:text-[11px] md:text-[9px] sm:text-[7px] text-[5px]">
+                                        <div className="">
+                                            <p>{arcana[number].meanTH}</p><br/><br/>
+                                            <p><a className="noto-sans-thai-font-bold">ความหมายด้านดี:</a> {arcana[number].meanGoodTH}</p><br/>
+                                            <p><a className="noto-sans-thai-font-bold">ความหมายด้านลบ:</a> {arcana[number].meanBadTH}</p><br/>
+                                            <p><a className="noto-sans-thai-font-bold">ข้อความจากแม่หมอ:</a> {arcana[number].hintTH}</p>
+                                            <br/>
+                                            <hr className="border-t border-gray-300 my-4"/>
+                                            <br/>
+                                            <p>{arcana[number].meanEN}</p><br/><br/>
+                                            <p><a className="roboto-font-bold">Good Meaning:</a> {arcana[number].meanGoodEN}</p><br/>
+                                            <p><a className="roboto-font-bold">Bad Meaning:</a> {arcana[number].meanBadEN}</p><br/>
+                                            <p><a className="roboto-font-bold">From Seer:</a> {arcana[number].hintEN}</p>
+                                        </div>
+                                    </div> 
                                 </div>
+                                
                             </div>
                         </main>
 
@@ -78,8 +88,15 @@ export default function Get_Card(){
                                     <div className="">
                                         <p>{arcana[number].meanTH}</p><br/><br/>
                                         <p><a className="noto-sans-thai-font-bold">ความหมายด้านดี:</a> {arcana[number].meanGoodTH}</p><br/>
-                                        <p><a className="noto-sans-thai-font-bold">ความหมายด้านลบ:</a> {arcana[number].meanBadTH}</p><br/><br/>
-                                        <p><a className="noto-sans-thai-font-bold">ข้อความจากแม่หมอ:</a> {arcana[number].hint}</p>
+                                        <p><a className="noto-sans-thai-font-bold">ความหมายด้านลบ:</a> {arcana[number].meanBadTH}</p><br/>
+                                        <p><a className="noto-sans-thai-font-bold">ข้อความจากแม่หมอ:</a> {arcana[number].hintTH}</p>
+                                        <br/>
+                                        <hr className="border-t border-gray-300 my-4"/>
+                                        <br/>
+                                        <p>{arcana[number].meanEN}</p><br/><br/>
+                                        <p><a className="roboto-font-bold">Good Meaning:</a> {arcana[number].meanGoodEN}</p><br/>
+                                        <p><a className="roboto-font-bold">Bad Meaning:</a> {arcana[number].meanBadEN}</p><br/>
+                                        <p><a className="roboto-font-bold">From Seer:</a> {arcana[number].hintEN}</p>
                                     </div>
                                 </div>
 
@@ -91,11 +108,8 @@ export default function Get_Card(){
                             </div>  
                         </main>
 
-                        <footer className="TemplateColor noto-sans-thai-font text-center text-white rounded-b-lg p-2 shadow-xl">
-                            <div className="text-red-500 2xl:text-[14px] xl:text-[12px] lg:text-[10px] md:text-[8px] sm:text-[7px] text-[7px]">
-                                อย่าลืมมาแลกของที่ระลึกฟรีได้ที่บูธชั้น 3 ห้อง 308
-                            </div>
-                            <div className="noto-sans-thai-font-bold 2xl:text-[12px] xl:text-[10px] lg:text-[8px] md:text-[6px] sm:text-[5px] text-[5px]">
+                        <footer className="TemplateColor roboto-font-bold text-center text-white rounded-b-lg p-2 shadow-xl">
+                            <div className="2xl:text-[12px] xl:text-[10px] lg:text-[8px] md:text-[6px] sm:text-[5px] text-[5px]">
                                 made by CSCMU66 
                             </div>
                         </footer> 

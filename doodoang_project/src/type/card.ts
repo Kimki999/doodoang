@@ -7,5 +7,6 @@ export type Card={
     meanEN: string,
     meanGoodEN: string,
     meanBadEN: string,
-    hint: string
+    hintTH: string
+    hintEN: string
 }
