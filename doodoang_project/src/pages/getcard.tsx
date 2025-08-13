@@ -7,7 +7,7 @@ import Picbutton from "../component/button";
 import { arcana } from "../template/Card";
 
 import "../pages/css/getcard.css"
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import FadeIn from "../component/fadeIn";
 
 export default function Get_Card(){
@@ -15,11 +15,6 @@ export default function Get_Card(){
     const location = useLocation();
     const card = location.state as [number,string];
     const number1 = card[0],path=card[1];
-    const [ number,setnumber ] = useState<number>(0);
-
-    if(number1 == null){
-        setnumber(0);
-    }
 
     useEffect(() => {
         const onPopState = () => {
@@ -29,7 +24,8 @@ export default function Get_Card(){
         return () => window.removeEventListener("popstate", onPopState);
     }, []);
 
-    // console.log(number);
+    // console.log("---------/getcard---------")
+    // console.log(number1);
 
     return (
         <FadeIn>
@@ -38,7 +34,7 @@ export default function Get_Card(){
                     <div className="m-2">
                         <header className="TemplateColor roboto-font-bold rounded-t-lg">
                             <div className="text-center text-white p-2 shadow-xl 2xl:text-2xl xl:text-xl lg:text-lg md:text-md sm:text-sm text-sm">
-                                {arcana[number].name}
+                                {arcana[number1].name}
                             </div>
                         </header>
 
@@ -59,17 +55,17 @@ export default function Get_Card(){
                                    <div className="noto-sans-thai-font m-3 overflow-y-auto h-full 
                                     side-scroll 2xl:text-[15px] xl:text-[13px] lg:text-[11px] md:text-[9px] sm:text-[7px] text-[5px]">
                                         <div className="">
-                                            <p>{arcana[number].meanTH}</p><br/><br/>
-                                            <p><a className="noto-sans-thai-font-bold">ความหมายด้านดี:</a> {arcana[number].meanGoodTH}</p><br/>
-                                            <p><a className="noto-sans-thai-font-bold">ความหมายด้านลบ:</a> {arcana[number].meanBadTH}</p><br/>
-                                            <p><a className="noto-sans-thai-font-bold">ข้อความจากแม่หมอ:</a> {arcana[number].hintTH}</p>
+                                            <p>{arcana[number1].meanTH}</p><br/><br/>
+                                            <p><a className="noto-sans-thai-font-bold">ความหมายด้านดี:</a> {arcana[number1].meanGoodTH}</p><br/>
+                                            <p><a className="noto-sans-thai-font-bold">ความหมายด้านลบ:</a> {arcana[number1].meanBadTH}</p><br/>
+                                            <p><a className="noto-sans-thai-font-bold">ข้อความจากแม่หมอ:</a> {arcana[number1].hintTH}</p>
                                             <br/>
                                             <hr className="border-t border-gray-300 my-4"/>
                                             <br/>
-                                            <p>{arcana[number].meanEN}</p><br/><br/>
-                                            <p><a className="roboto-font-bold">Good Meaning:</a> {arcana[number].meanGoodEN}</p><br/>
-                                            <p><a className="roboto-font-bold">Bad Meaning:</a> {arcana[number].meanBadEN}</p><br/>
-                                            <p><a className="roboto-font-bold">From Seer:</a> {arcana[number].hintEN}</p>
+                                            <p>{arcana[number1].meanEN}</p><br/><br/>
+                                            <p><a className="roboto-font-bold">Good Meaning:</a> {arcana[number1].meanGoodEN}</p><br/>
+                                            <p><a className="roboto-font-bold">Bad Meaning:</a> {arcana[number1].meanBadEN}</p><br/>
+                                            <p><a className="roboto-font-bold">From Seer:</a> {arcana[number1].hintEN}</p>
                                         </div>
                                     </div> 
                                 </div>
@@ -86,17 +82,17 @@ export default function Get_Card(){
 
                                 <div className="side-scroll noto-sans-thai-font m-3 overflow-y-auto h-full text-[8px] sm:text-[11px]">
                                     <div className="">
-                                        <p>{arcana[number].meanTH}</p><br/><br/>
-                                        <p><a className="noto-sans-thai-font-bold">ความหมายด้านดี:</a> {arcana[number].meanGoodTH}</p><br/>
-                                        <p><a className="noto-sans-thai-font-bold">ความหมายด้านลบ:</a> {arcana[number].meanBadTH}</p><br/>
-                                        <p><a className="noto-sans-thai-font-bold">ข้อความจากแม่หมอ:</a> {arcana[number].hintTH}</p>
+                                        <p>{arcana[number1].meanTH}</p><br/><br/>
+                                        <p><a className="noto-sans-thai-font-bold">ความหมายด้านดี:</a> {arcana[number1].meanGoodTH}</p><br/>
+                                        <p><a className="noto-sans-thai-font-bold">ความหมายด้านลบ:</a> {arcana[number1].meanBadTH}</p><br/>
+                                        <p><a className="noto-sans-thai-font-bold">ข้อความจากแม่หมอ:</a> {arcana[number1].hintTH}</p>
                                         <br/>
                                         <hr className="border-t border-gray-300 my-4"/>
                                         <br/>
-                                        <p>{arcana[number].meanEN}</p><br/><br/>
-                                        <p><a className="roboto-font-bold">Good Meaning:</a> {arcana[number].meanGoodEN}</p><br/>
-                                        <p><a className="roboto-font-bold">Bad Meaning:</a> {arcana[number].meanBadEN}</p><br/>
-                                        <p><a className="roboto-font-bold">From Seer:</a> {arcana[number].hintEN}</p>
+                                        <p>{arcana[number1].meanEN}</p><br/><br/>
+                                        <p><a className="roboto-font-bold">Good Meaning:</a> {arcana[number1].meanGoodEN}</p><br/>
+                                        <p><a className="roboto-font-bold">Bad Meaning:</a> {arcana[number1].meanBadEN}</p><br/>
+                                        <p><a className="roboto-font-bold">From Seer:</a> {arcana[number1].hintEN}</p>
                                     </div>
                                 </div>
 
@@ -116,9 +112,6 @@ export default function Get_Card(){
                     </div>
                 </div>    
             </div>
-            
-
-            
         </FadeIn>
     )
 }

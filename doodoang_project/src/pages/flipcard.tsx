@@ -47,7 +47,8 @@ export default function Flipcard(){
     const [flipped, setFlipped] = useState(false);
 
 
-    console.log(location.pathname)
+    // console.log(location.pathname)
+    // console.log(number)
 
     return (
             <FadeIn>
@@ -80,7 +81,7 @@ export default function Flipcard(){
                             </div>
                             <div className="flex items-center justify-center mt-1 rounded-xl">
                                 {   flipped &&
-                                    (<Picbutton onClick={() => navigate("/GetCard",{replace: true,state:[number,Allcard[number]]})} max_h={10} base={ForecastButton} hover={ClickedForecastButton} ></Picbutton>)
+                                    (<Picbutton onClick={() => navigate("/GetCard",{replace: true,state:[number==null?(0):(number),Allcard[number==null?(0):(number)]]})} max_h={10} base={ForecastButton} hover={ClickedForecastButton} ></Picbutton>)
                                 }
                             </div>
 
