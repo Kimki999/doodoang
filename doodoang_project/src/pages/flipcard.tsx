@@ -16,7 +16,7 @@ import Temperance from "../assets/14_Temperance.png";
 import TheDevil from "../assets/15_The_Devil.png";
 import TheTower from "../assets/16_The_Tower.png";
 import TheStar from "../assets/17_The_Star.jpg";
-import TheMoon from "../assets/18_The_Moon.jpg";
+import TheMoon from "../assets/18_The_Moon.png";
 import TheSun from "../assets/19_The_Sun.jpg";
 import Judgement from "../assets/20_Judgement.jpg";
 import TheWorld from "../assets/21_The_World.jpg";
